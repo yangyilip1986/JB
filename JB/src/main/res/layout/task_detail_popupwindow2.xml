@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_notice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_toast"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp"
+    android:paddingTop="12dp" >
+
+    <TextView
+        android:id="@+id/tv_tiyanjin_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="体验金使用说明"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:maxWidth="280dp"
+        android:text="@string/tiyanjinshuoming"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</LinearLayout>

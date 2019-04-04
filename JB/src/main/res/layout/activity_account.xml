@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/headLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headLinear"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/view_list" />
+
+        <RelativeLayout
+            android:id="@+id/rl_username"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/username_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account_username"
+                android:drawablePadding="@dimen/page_drawable"
+                android:gravity="center_vertical"
+                android:text="用户名"
+                android:textColor="@color/app_font_dark"
+                android:textSize="@dimen/font_app" />
+
+            <ImageView
+                android:id="@+id/usernameimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/account_goto" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/usernameimg"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="设置用户名"
+                android:textColor="@color/app_font_light"
+                android:textSize="@dimen/font_app" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_tel"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/tel_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account_tel"
+                android:drawablePadding="@dimen/page_drawable"
+                android:gravity="center_vertical"
+                android:text="修改绑定手机号"
+                android:textColor="@color/app_font_dark"
+                android:textSize="@dimen/font_app" />
+
+            <ImageView
+                android:id="@+id/iv_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/account_goto" />
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_tel"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="@color/app_font_light"
+                android:textSize="@dimen/font_app" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_idcard"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/idcard_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account_idcard"
+                android:drawablePadding="@dimen/page_drawable"
+                android:gravity="center_vertical"
+                android:text="实名认证"
+                android:textColor="@color/app_font_dark"
+                android:textSize="@dimen/font_app" />
+
+            <ImageView
+                android:id="@+id/idcardimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/account_goto" />
+
+            <TextView
+                android:id="@+id/idcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/idcardimg"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="未实名认证"
+                android:textColor="@color/app_font_light"
+                android:textSize="@dimen/font_app" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/bankcard_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account_bankcard"
+                android:drawablePadding="@dimen/page_drawable"
+                android:gravity="center_vertical"
+                android:text="绑定银行卡"
+                android:textColor="@color/app_font_dark"
+                android:textSize="@dimen/font_app" />
+
+            <ImageView
+                android:id="@+id/bankcardimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/account_goto" />
+
+            <TextView
+                android:id="@+id/bankcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/bankcardimg"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="未绑卡"
+                android:textColor="@color/app_font_light"
+                android:textSize="@dimen/font_app" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/view_list" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/hand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account_hand"
+                android:drawablePadding="@dimen/page_drawable"
+                android:gravity="center_vertical"
+                android:text="启用手势密码"
+                android:textColor="@color/app_font_dark"
+                android:textSize="@dimen/font_app" />
+
+            <ImageView
+                android:id="@+id/handimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/gesture_close" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account_pwd"
+                android:drawablePadding="@dimen/page_drawable"
+                android:gravity="center_vertical"
+                android:text="@string/account_pwd"
+                android:textColor="@color/app_font_dark"
+                android:textSize="@dimen/font_app" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/account_goto" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/app_line" />
+
+        <TextView
+            android:id="@+id/signout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="47dp"
+            android:background="@drawable/bg_blue"
+            android:gravity="center"
+            android:text="@string/signout"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_app" />
+    </LinearLayout>
+
+</RelativeLayout>

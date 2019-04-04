@@ -1,0 +1,4 @@
+#Wed Apr 03 11:27:41 CST 2019
+base.0=E\:\\JB\\JB\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+path.0=classes.dex
+renamed.0=classes.dex

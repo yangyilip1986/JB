@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="transactionType">
+        <item>全部</item>
+        <item>充值</item>
+        <item>提现</item>
+        <item>投资</item>
+        <item>回款</item>
+        <item>返现</item>
+    </string-array>
+    <string-array name="transactionType2">
+        <item>全部</item>
+        <item>充值</item>
+        <item>提现</item>
+        <item>投资</item>
+        <item>回款</item>
+        <item>返现</item>
+        <item>融资冻结</item>
+        <item>融资放款</item>
+        <item>服务费</item>
+        <item>还款</item>
+    </string-array>
+
+</resources>

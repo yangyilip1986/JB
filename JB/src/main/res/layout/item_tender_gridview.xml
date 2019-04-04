@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_auditing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_line"
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@drawable/check"
+        android:drawablePadding="@dimen/text_drawable"
+        android:text="户口本"
+        android:textColor="@color/font_gray"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+</LinearLayout>

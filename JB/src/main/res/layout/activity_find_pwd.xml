@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- 显示头部标题 -->
+
+    <LinearLayout
+        android:id="@+id/headLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headLinear"
+        android:orientation="vertical"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:paddingTop="@dimen/page_top" >
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/page_line"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/app_font_dark"
+            android:textColorHint="@color/app_font_light"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_line" />
+
+        <LinearLayout
+            android:id="@+id/verify1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/verification"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/page_line"
+                android:layout_weight="3"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入验证码"
+                android:paddingBottom="@dimen/text_line"
+                android:textColor="@color/app_font_dark"
+                android:textColorHint="@color/app_font_light"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/verifyimage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_weight="2"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/tel_verify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/page_line"
+                android:layout_weight="3"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入手机验证码"
+                android:paddingBottom="@dimen/text_line"
+                android:singleLine="true"
+                android:textColor="@color/app_font_dark"
+                android:textColorHint="@color/app_font_light"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_blue"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_drawable"
+                android:paddingTop="@dimen/text_drawable"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_app" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_line" />
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/page_line"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/app_font_dark"
+            android:textColorHint="@color/app_font_light"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_line" />
+
+        <EditText
+            android:id="@+id/pwdconfirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/page_line"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请再次输入新密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/app_font_dark"
+            android:textColorHint="@color/app_font_light"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_line" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/page_line"
+            android:background="@drawable/bg_blue"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_app" />
+    </LinearLayout>
+
+</RelativeLayout>

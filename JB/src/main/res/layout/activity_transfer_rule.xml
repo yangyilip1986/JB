@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/headLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <WebView
+            android:id="@+id/wv_transferrule"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_agree"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_blue"
+                android:gravity="center"
+                android:text="同意并继续"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/font_title" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

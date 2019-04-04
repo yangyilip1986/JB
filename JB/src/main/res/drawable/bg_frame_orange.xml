@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <!-- 外边框 -->
+            <item>
+                <shape android:shape="rectangle">
+                    <solid 
+                        android:color="@color/app_orange" />
+
+                    <corners 
+                        android:bottomLeftRadius="3dip" 
+                        android:bottomRightRadius="3dip" 
+                        android:topLeftRadius="3dip" 
+                        android:topRightRadius="3dip" />
+                </shape>
+            </item>
+            
+            <!-- 填充颜色 -->
+            <item 
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px">
+                <shape>
+                    <gradient 
+                        android:angle="90"
+                        android:centerX="0.5"
+                        android:centerY="0.5"
+                        android:endColor="#ffffff"
+                        android:startColor="#ffffff"
+                        android:type="linear" />
+
+                    <corners 
+                        android:bottomLeftRadius="3dip"
+                        android:bottomRightRadius="3dip"
+                        android:topLeftRadius="3dip"
+                        android:topRightRadius="3dip" />
+                </shape>
+            </item>
+        </layer-list>
+	</item>
+</selector>

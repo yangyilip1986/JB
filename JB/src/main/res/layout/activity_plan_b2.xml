@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/plan_b_piece_product" />
+
+    <LinearLayout
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/view_list" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/page_top_new"
+            android:text="投标记录"
+            android:textColor="@color/app_font_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/text_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/page_small_new"
+            android:background="@color/app_line" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.jiubang.p2p.view.ListViewForScrollView
+                android:id="@+id/listview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@color/transparent"
+                android:dividerHeight="1dp" />
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/empty"
+                android:gravity="center_horizontal|top"
+                android:text="暂无数据"
+                android:textColor="@color/app_font_light"
+                android:textSize="16sp"
+                android:visibility="visible" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

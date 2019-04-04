@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transactionType">
+        <item>全部</item>
+        <item>充值</item>
+        <item>提现</item>
+        <item>投资</item>
+        <item>回款</item>
+        <item>返现</item>
+    </string-array>
+    <string-array name="transactionType2">
+        <item>全部</item>
+        <item>充值</item>
+        <item>提现</item>
+        <item>投资</item>
+        <item>回款</item>
+        <item>返现</item>
+        <item>融资冻结</item>
+        <item>融资放款</item>
+        <item>服务费</item>
+        <item>还款</item>
+    </string-array>
+    <color name="aliceblue">#f0f8ff</color>
+    <color name="antiquewhite">#faebd7</color>
+    <color name="app_background_white">#fbfbfb</color>
+    <color name="app_bg">#ffe6e6e6</color>
+    <color name="app_blue">#3385ff</color>
+    <color name="app_cash_type">#fffcfed9</color>
+    <color name="app_coupon">#ffe65e79</color>
+    <color name="app_divide_grey">#f2f2f2</color>
+    <color name="app_font">#666666</color>
+    <color name="app_font_dark">#333333</color>
+    <color name="app_font_green">#00b12e</color>
+    <color name="app_font_light">#999999</color>
+    <color name="app_font_red">#fc6262</color>
+    <color name="app_font_selected">#3385ff</color>
+    <color name="app_gray">#ffe9e9e9</color>
+    <color name="app_gray_financial_plan">#eeeeee</color>
+    <color name="app_gray_financial_planed">#fafafa</color>
+    <color name="app_green">#0dcf43</color>
+    <color name="app_grey">#cccccc</color>
+    <color name="app_integral_text_gray">#7f7f7f</color>
+    <color name="app_light_blue">#ff4c90db</color>
+    <color name="app_line">#e8e8e8</color>
+    <color name="app_line_e3">#e3e3e3</color>
+    <color name="app_navy_blue">#ff3c4167</color>
+    <color name="app_orange">#ffff772d</color>
+    <color name="app_red">#fc3333</color>
+    <color name="aqua">#00ffff</color>
+    <color name="aquamarine">#7fffd4</color>
+    <color name="azure">#f0ffff</color>
+    <color name="beige">#f5f5dc</color>
+    <color name="bisque">#ffe4c4</color>
+    <color name="black">#000000</color>
+    <color name="blanchedalmond">#ffebcd</color>
+    <color name="blue">#0000ff</color>
+    <color name="blueviolet">#8a2be2</color>
+    <color name="brown">#a52a2a</color>
+    <color name="burlywood">#deb887</color>
+    <color name="cadetblue">#5f9ea0</color>
+    <color name="chartreuse">#7fff00</color>
+    <color name="chocolate">#d2691e</color>
+    <color name="coral">#ff7f50</color>
+    <color name="cornflowerblue">#6495ed</color>
+    <color name="cornsilk">#fff8dc</color>
+    <color name="crimson">#dc143c</color>
+    <color name="cyan">#00ffff</color>
+    <color name="darkblue">#00008b</color>
+    <color name="darkcyan">#008b8b</color>
+    <color name="darkgoldenrod">#b8860b</color>
+    <color name="darkgray">#a9a9a9</color>
+    <color name="darkgreen">#006400</color>
+    <color name="darkgrey">#a9a9a9</color>
+    <color name="darkkhaki">#bdb76b</color>
+    <color name="darkmagenta">#8b008b</color>
+    <color name="darkolivegreen">#556b2f</color>
+    <color name="darkorange">#ff8c00</color>
+    <color name="darkorchid">#9932cc</color>
+    <color name="darkred">#8b0000</color>
+    <color name="darksalmon">#e9967a</color>
+    <color name="darkseagreen">#8fbc8f</color>
+    <color name="darkslateblue">#483d8b</color>
+    <color name="darkslategray">#2f4f4f</color>
+    <color name="darkslategrey">#2f4f4f</color>
+    <color name="darkturquoise">#00ced1</color>
+    <color name="darkviolet">#9400d3</color>
+    <color name="deeppink">#ff1493</color>
+    <color name="deepskyblue">#00bfff</color>
+    <color name="dialog_blue">#ff3883d7</color>
+    <color name="dialog_green">#ff6db85c</color>
+    <color name="dialog_orange">#ffff7719</color>
+    <color name="dimgray">#696969</color>
+    <color name="dimgrey">#696969</color>
+    <color name="dodgerblue">#1e90ff</color>
+    <color name="firebrick">#b22222</color>
+    <color name="floralwhite">#fffaf0</color>
+    <color name="font_black">#ff2a344d</color>
+    <color name="font_gray">#ff808080</color>
+    <color name="font_green">#1dcf43</color>
+    <color name="font_hint">#b0b0b0</color>
+    <color name="font_message_title">#31436b</color>
+    <color name="forestgreen">#228b22</color>
+    <color name="fuchsia">#ff00ff</color>
+    <color name="gainsboro">#dcdcdc</color>
+    <color name="ghostwhite">#f8f8ff</color>
+    <color name="gold">#ffd700</color>
+    <color name="goldenrod">#daa520</color>
+    <color name="gray">#808080</color>
+    <color name="green">#008000</color>
+    <color name="greenyellow">#adff2f</color>
+    <color name="grey">#808080</color>
+    <color name="half_transparent">#e0000000</color>
+    <color name="honeydew">#f0fff0</color>
+    <color name="hotpink">#ff69b4</color>
+    <color name="indianred">#cd5c5c</color>
+    <color name="indigo">#4b0082</color>
+    <color name="ivory">#fffff0</color>
+    <color name="khaki">#f0e68c</color>
+    <color name="lavender">#e6e6fa</color>
+    <color name="lavenderblush">#fff0f5</color>
+    <color name="lawngreen">#7cfc00</color>
+    <color name="lemonchiffon">#fffacd</color>
+    <color name="lightblue">#add8e6</color>
+    <color name="lightcoral">#f08080</color>
+    <color name="lightcyan">#e0ffff</color>
+    <color name="lightgoldenrodyellow">#fafad2</color>
+    <color name="lightgray">#d3d3d3</color>
+    <color name="lightgreen">#90ee90</color>
+    <color name="lightpink">#ffb6c1</color>
+    <color name="lightsalmon">#ffa07a</color>
+    <color name="lightseagreen">#20b2aa</color>
+    <color name="lightskyblue">#87cefa</color>
+    <color name="lightslategray">#778899</color>
+    <color name="lightslategrey">#778899</color>
+    <color name="lightsteelblue">#b0c4de</color>
+    <color name="lightyellow">#ffffe0</color>
+    <color name="lime">#00ff00</color>
+    <color name="limegreen">#32cd32</color>
+    <color name="linen">#faf0e6</color>
+    <color name="magenta">#ff00ff</color>
+    <color name="maroon">#800000</color>
+    <color name="mediumaquamarine">#66cdaa</color>
+    <color name="mediumblue">#0000cd</color>
+    <color name="mediumorchid">#ba55d3</color>
+    <color name="mediumpurple">#9370db</color>
+    <color name="mediumseagreen">#3cb371</color>
+    <color name="mediumslateblue">#7b68ee</color>
+    <color name="mediumspringgreen">#00fa9a</color>
+    <color name="mediumturquoise">#48d1cc</color>
+    <color name="mediumvioletred">#c71585</color>
+    <color name="midnightblue">#191970</color>
+    <color name="mintcream">#f5fffa</color>
+    <color name="mistyrose">#ffe4e1</color>
+    <color name="moccasin">#ffe4b5</color>
+    <color name="navajowhite">#ffdead</color>
+    <color name="navy">#000080</color>
+    <color name="oldlace">#fdf5e6</color>
+    <color name="olive">#808000</color>
+    <color name="olivedrab">#6b8e23</color>
+    <color name="orange">#ff9900</color>
+    <color name="orangered">#ff4500</color>
+    <color name="orchid">#da70d6</color>
+    <color name="palegoldenrod">#eee8aa</color>
+    <color name="palegreen">#98fb98</color>
+    <color name="paleturquoise">#afeeee</color>
+    <color name="palevioletred">#db7093</color>
+    <color name="papayawhip">#ffefd5</color>
+    <color name="peachpuff">#ffdab9</color>
+    <color name="peru">#cd853f</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="plan_abc_black">#141414</color>
+    <color name="plum">#dda0dd</color>
+    <color name="powderblue">#b0e0e6</color>
+    <color name="purple">#800080</color>
+    <color name="red">#ff0000</color>
+    <color name="rosybrown">#bc8f8f</color>
+    <color name="royalblue">#4169e1</color>
+    <color name="saddlebrown">#8b4513</color>
+    <color name="salmon">#fa8072</color>
+    <color name="sandybrown">#f4a460</color>
+    <color name="seaShell">#fff5ee</color>
+    <color name="seagreen">#2e8b57</color>
+    <color name="sienna">#a0522d</color>
+    <color name="silver">#c0c0c0</color>
+    <color name="skyblue">#87ceeb</color>
+    <color name="slateblue">#6a5acd</color>
+    <color name="slategray">#708090</color>
+    <color name="slategrey">#708090</color>
+    <color name="snow">#fffafa</color>
+    <color name="springgreen">#00ff7f</color>
+    <color name="steelblue">#4682b4</color>
+    <color name="tab_gray">#ff929292</color>
+    <color name="tan">#d2b48c</color>
+    <color name="teal">#008080</color>
+    <color name="thistle">#d8bfd8</color>
+    <color name="tomato">#ff6347</color>
+    <color name="transparent">#00000000</color>
+    <color name="turquoise">#40e0d0</color>
+    <color name="violet">#ee82ee</color>
+    <color name="wheat">#f5deb3</color>
+    <color name="white">#ffffff</color>
+    <color name="whitesmoke">#f5f5f5</color>
+    <color name="yellow">#ffff00</color>
+    <color name="ylc_product_choice_gray">#666666</color>
+    <color name="ylc_product_choice_orange">#ff772d</color>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/><attr format="boolean" name="border_overlay"/></declare-styleable>
+    <declare-styleable name="CircleProgressBar"><attr format="color" name="circleProgressColor"/><attr format="integer" name="circleProgressStrokeWidth"/></declare-styleable>
+    <declare-styleable name="TasksCompletedView"><attr format="dimension" name="radius"/><attr format="dimension" name="strokeWidth"/><attr format="color" name="circleColor"/><attr format="color" name="ringColor"/><attr format="string" name="word"/></declare-styleable>
+    <declare-styleable name="ToggleButton"><attr format="dimension" name="borderWidth"/><attr format="reference|color" name="offBorderColor"/><attr format="reference|color" name="offColor"/><attr format="reference|color" name="onColor"/><attr format="reference|color" name="spotColor"/><attr format="reference|boolean" name="animate"/><attr format="reference|boolean" name="isDefaultOn"/></declare-styleable>
+    <dimen name="account_red_box">20dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="font_app">14sp</dimen>
+    <dimen name="font_app_18sp">18sp</dimen>
+    <dimen name="font_hint">12sp</dimen>
+    <dimen name="font_hint_15sp">15sp</dimen>
+    <dimen name="font_hint_new">15sp</dimen>
+    <dimen name="font_huge">34sp</dimen>
+    <dimen name="font_num">18sp</dimen>
+    <dimen name="font_small">10sp</dimen>
+    <dimen name="font_title">18sp</dimen>
+    <dimen name="item_small">2dp</dimen>
+    <dimen name="margin_top">26dp</dimen>
+    <dimen name="page_bottom">10dp</dimen>
+    <dimen name="page_bottom_new">13dp</dimen>
+    <dimen name="page_drawable">10dp</dimen>
+    <dimen name="page_left">10dp</dimen>
+    <dimen name="page_left_new">15dp</dimen>
+    <dimen name="page_line">10dp</dimen>
+    <dimen name="page_right">10dp</dimen>
+    <dimen name="page_small">5dp</dimen>
+    <dimen name="page_small_new">15dp</dimen>
+    <dimen name="page_top">10dp</dimen>
+    <dimen name="page_top_new">15dp</dimen>
+    <dimen name="person_top_new">13dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_offset">200dp</dimen>
+    <dimen name="text_drawable">5dp</dimen>
+    <dimen name="text_drawable_account">10dp</dimen>
+    <dimen name="text_drawable_new">8dp</dimen>
+    <dimen name="text_line">5dp</dimen>
+    <string name="account">我的</string>
+    <string name="account_account">账户中心</string>
+    <string name="account_balance">账户余额</string>
+    <string name="account_email">未绑定邮箱</string>
+    <string name="account_gain">累计收益（元）</string>
+    <string name="account_hand">启用手势密码</string>
+    <string name="account_idcard">未身份认证</string>
+    <string name="account_invest">回款计划</string>
+    <string name="account_pwd">修改登录密码</string>
+    <string name="account_red">我的卡券</string>
+    <string name="account_trans">交易记录</string>
+    <string name="account_username">设置用户名</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_data_error">数据有误,请重试</string>
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请提交错误报告，我们会尽快修复这个问题！</string>
+    <string name="app_exception">未知错误</string>
+    <string name="app_menu_surelogout">确定退出程序吗？</string>
+    <string name="app_name">九邦信投网</string>
+    <string name="app_network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+    <string name="app_sdcard_notfound">请确保SD卡已插入</string>
+    <string name="back">返回</string>
+    <string name="baidutieba">百度贴吧</string>
+    <string name="baidutieba_client_inavailable">目前您的百度贴吧版本过低或未安装，需要安装百度贴吧才能使用</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="cancel">取消</string>
+    <string name="cancle">取消</string>
+    <string name="cash">提现</string>
+    <string name="cash_confirm">确认提现</string>
+    <string name="charge">充值</string>
+    <string name="charge_confirm">确认充值</string>
+    <string name="charge_hint">0元&lt;充值金额&lt;1000万元</string>
+    <string name="confirm">确定</string>
+    <string name="copyright">版权所有：上海盐商网络科技有限公司</string>
+    <string name="coupon_expire">过期时间：</string>
+    <string name="data_parser_failed">数据解析异常</string>
+    <string name="detail_assure">上海芝金资产管理有限公司成立于2010年，注册资本金为5000万，是一家资本实力雄厚、拥有专业人才的新型金融服务机构。公司拥有成熟的风险控制和完善的管理团队，并依托于国内大型集团的实力，对相关项目进行整体分析及风险评估，从中筛选优质客户。</string>
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_title">温馨提示</string>
+    <string name="douban">豆瓣</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="email">邮件</string>
+    <string name="email_add">邮箱绑定后只能在PC网页进行修改!</string>
+    <string name="email_hint">输入需要绑定邮箱</string>
+    <string name="evernote">印象笔记</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebookmessenger">Facebook Messenger</string>
+    <string name="finish">完成</string>
+    <string name="flickr">Flickr</string>
+    <string name="foursquare">FourSquare</string>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="googleplus">Google+</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="hunhebiaoshuoming">1.混合标（可用现金和体验金投资的标），需满足对应使用金额及限制条件。\n2.已成功投资的体验金，会按项目年化计息产生收益，但不计入募集资金总额。\n3.使用体验金投资时，混合标不得超过体验金个人购买上限。\n4.投资时，需要自行勾选体验金使用，系统不会自动抵扣。</string>
+    <string name="idcard_hint">监管部门规定，购买理财产品需提供实名认证信息以确保信息安全。</string>
+    <string name="idcard_id">请输入身份证号</string>
+    <string name="idcard_name">请输入真实姓名</string>
+    <string name="index">首页</string>
+    <string name="instagram">Instagram</string>
+    <string name="instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <string name="instapager_email_or_password_incorrect">Email或密码不正确</string>
+    <string formatted="false" name="instapager_login_html"><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\">
+<meta content=\"width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no\" id=\"viewport\" name=\"viewport\">
+<meta content=\"yes\" name=\"apple-mobile-web-app-capable\">
+<title>%s</title>
+<style type=\"text/css\">
+body{margin:0;padding:0}
+.inputstyle {
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    width:100%%;
+    height:44px;
+    color:#000;
+    background:0;
+    border:0;
+    font-size:16px;
+    outline: none;
+    -webkit-appearance:none
+}
+
+.btn {
+    width:90%%;
+    height:44px;
+    line-height:44px;
+    background:#A0C035;
+    border:0;
+    border-radius:4px;
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    margin-top:15px;
+    display:block
+}
+.btn:disabled {
+    background: #dddddd;
+}
+.error {
+    color:red;
+}
+</style>
+</head>
+
+<body>
+<script type=\"text/javascript\">
+function login(form){
+    var u=form[\"u\"].value,p=form[\"p\"].value;
+    if(!u || !p)
+        return false;
+    form[\"s\"].disabled = true;
+    return true;
+}
+</script>
+<form style=\"margin-top:45px;\" action=\"%s\" metho=\"get\" onsubmit=\"return login(this);\">
+%s
+<div style=\"padding-left:15px;border-top:1px solid #E3E3E5;border-bottom:1px solid #E3E3E5;\">
+ <input type=\"hidden\" name=\"ID_SIGN\" value=\"OWELJSFPWECSFEW\"/>
+ <input class=\"inputstyle\" id=\"u\" name=\"u\" type=\"text\" value=\"%s\" placeholder=\"%s\" style=\"border-bottom:1px solid #E3E3E5;\"/>
+ <input class=\"inputstyle\" id=\"p\" name=\"p\" type=\"password\" placeholder=\"%s\"/>
+</div>
+<p><input style=\"margin:0 auto;\" type=\"submit\" name=\"s\" value=\"  %s  \" class=\"btn\"/></p>
+</form>
+</body>
+</html>
+]]></string>
+    <string name="instapaper">Instapaper</string>
+    <string name="instapaper_email">邮箱</string>
+    <string name="instapaper_login">登录</string>
+    <string name="instapaper_logining">登录中…</string>
+    <string name="instapaper_pwd">密码</string>
+    <string name="invest_amount">还款本息</string>
+    <string name="invest_price">投资金额</string>
+    <string name="invest_protocol"><u>借款协议</u></string>
+    <string name="invest_rate">预计年化收益率</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="item_product_deadline">投资时限</string>
+    <string name="item_product_gain">预计年化收益率</string>
+    <string name="kaixin">开心网</string>
+    <string name="kakaostory">KakaoStory</string>
+    <string name="kakaostory_client_inavailable">目前您的KakaoStory版本过低或未安装，需要安装KakaoStory才能使用</string>
+    <string name="kakaotalk">KakaoTalk</string>
+    <string name="kakaotalk_client_inavailable">目前您的KakaoTalk版本过低或未安装，需要安装KakaoTalk才能使用</string>
+    <string name="line">Line</string>
+    <string name="line_client_inavailable">目前您的Line版本过低或未安装，需要安装Line才能使用</string>
+    <string name="linkedin">领英</string>
+    <string name="list_friends">%s的朋友</string>
+    <string name="load_empty">暂无数据</string>
+    <string name="load_error">加载数据出错</string>
+    <string name="load_full">已加载全部</string>
+    <string name="load_ing">加载中···</string>
+    <string name="load_more">更多</string>
+    <string name="mingdao">明道</string>
+    <string name="mingdao_share_content">网页分享</string>
+    <string name="more">更多</string>
+    <string name="more_aboutus">关于九邦信投网</string>
+    <string name="more_anno">平台公告</string>
+    <string name="more_comment">拨打客服电话</string>
+    <string name="more_help">帮助中心</string>
+    <string name="more_share">邀请好友</string>
+    <string name="more_update">检测更新</string>
+    <string name="multi_share">图文分享</string>
+    <string name="neteasemicroblog">网易微博</string>
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="new_data_toast_message">有 %d 条更新</string>
+    <string name="new_data_toast_none">没有新更新</string>
+    <string name="pinterest">Pinterest</string>
+    <string name="pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <string name="pocket">Pocket</string>
+    <string name="product">投资</string>
+    <string name="product_cond">100元起投</string>
+    <string name="product_ensure1">1. 项目推荐方线下尽调、审核、筛选优质资产。</string>
+    <string name="product_ensure2">2. 转让项目方按照合同约定承诺回购。</string>
+    <string name="product_ensure3">3. 芝金资产管理有限公司承诺对转让方回购进行履约担保，如转让方违约，担保方将对投资人本息进行全额代偿。</string>
+    <string name="product_ensure4">4. 九邦信投网已设立风险保障金，如担保方违约，九邦信投网将对投资人本息进行全额偿付。</string>
+    <string name="product_secu">本息担保</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="pwd_confirm">确认输入新密码</string>
+    <string name="pwd_new">请输入密码</string>
+    <string name="pwd_old">请输入旧密码</string>
+    <string name="qq">QQ</string>
+    <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="qzone">QQ空间</string>
+    <string name="refreshing">刷新中…</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="renren">人人网</string>
+    <string name="select_a_friend">请选择一个朋友</string>
+    <string name="select_one_plat_at_least">请选择一个目标平台</string>
+    <string name="shake2share">摇晃手机！</string>
+    <string name="share">分享</string>
+    <string name="share_canceled">分享已取消</string>
+    <string name="share_completed">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_to">分享到</string>
+    <string name="share_to_baidutieba">分享到百度贴吧</string>
+    <string name="share_to_mingdao">分享到明道</string>
+    <string name="share_to_qq">分享到QQ</string>
+    <string name="share_to_qzone">分享到QQ空间</string>
+    <string name="share_to_qzone_default">来自%s的分享</string>
+    <string name="sharing">分享操作正在后台进行…</string>
+    <string name="shortmessage">信息</string>
+    <string name="sign_code">点击获取</string>
+    <string name="sign_confirm_pwd_hint">请重复输入密码</string>
+    <string name="sign_hint">请先填写完整信息！</string>
+    <string name="sign_hint_err">输入的手机号和密码有误！</string>
+    <string name="sign_lose"><u>忘记密码？</u></string>
+    <string name="sign_protocol"><u>注册协议</u></string>
+    <string name="sign_pwd_hint">登录密码</string>
+    <string name="sign_signup">还没有账户？ <u>快速注册</u></string>
+    <string name="sign_tel_hint">请输入手机号</string>
+    <string name="sign_tel_verify_hint">短信验证码</string>
+    <string name="sign_up_pwd_hint">8-20位字母、数字和符号的组合</string>
+    <string name="sign_verify_hint">输入验证码</string>
+    <string name="signin">登录</string>
+    <string name="signout">退出登录</string>
+    <string name="signup">注册</string>
+    <string name="signup_code">请先输入11位电话号码。</string>
+    <string name="signup_code_success">验证码发送成功，请注意查收。</string>
+    <string name="signup_hascode">请先获取短信验证码！</string>
+    <string name="sinaweibo">新浪微博</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="sohumicroblog">搜狐微博</string>
+    <string name="sohusuishenkan">搜狐随身看</string>
+    <string name="submit_report">提交报告</string>
+    <string name="sure">确定</string>
+    <string name="tencentweibo">腾讯微博</string>
+    <string name="tender_protocol">我同意《转让协议》《咨询服务协议》《保证合同》</string>
+    <string name="test">这是一个测试。。</string>
+    <string name="title_activity_find_pwd">FindPwd</string>
+    <string name="title_activity_find_pwd_two">FindPwdTwoActivity</string>
+    <string name="title_activity_invite_list">InviteListActivity</string>
+    <string name="title_activity_normal_invite">NormalInviteActivity</string>
+    <string name="title_activity_verify_pwd">VerifyPwd</string>
+    <string name="title_activity_yan_invite">YanInviteActivity</string>
+    <string name="tiyanjin_red">1）投资使用体验金时，要满足两个条件：一是投资产品本身支持使用体验金；二是客户要满足对应体验金使用金额及期限的条件\n2）投资时，需要自行勾选体验金使用，系统不会自动抵扣</string>
+    <string name="tiyanjinchoice">1）投资使用体验金时，要满足两个条件：\n一是投资产品本身支持使用体验金；二是客户要满足对应体验金使用金额及期限的条件\n2）投资时，需要自行勾选体验金使用，系统不会自动抵扣</string>
+    <string name="tiyanjinshuoming">1.体验标（仅限体验金投资的标），只能使用体验金进行投资。\n2.首次投资体验标，产生收益会冻结，进行任意一笔现金投资才能解冻。\n3.已成功投资的体验金，会按项目年化计息产生收益。\n4.使用体验金投资时，体验标不得超过体验金个人购买上限。\n5.投资时，需要自行勾选体验金使用，系统不会自动抵扣。</string>
+    <string name="trans_balance">可用余额</string>
+    <string name="trans_pre">操作前金额</string>
+    <string name="trans_price">操作金额</string>
+    <string name="tumblr">Tumblr</string>
+    <string name="twitter">Twitter</string>
+    <string name="use_login_button">请改用“登录”按钮</string>
+    <string name="username_add">用户名设置成功后将不能够进行修改！</string>
+    <string name="username_hint">用户名输入</string>
+    <string name="vkontakte">VK</string>
+    <string name="website">http://www.mob.com</string>
+    <string name="wechat">微信好友</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="wechatfavorite">微信收藏</string>
+    <string name="wechatmoments">微信朋友圈</string>
+    <string name="weibo_oauth_regiseter">应用授权</string>
+    <string name="weibo_upload_content">分享图片</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_client_inavailable">目前您的WhatsApp版本过低或未安装，需要安装WhatsApp才能使用</string>
+    <string name="yixin">易信</string>
+    <string name="yixin_client_inavailable">目前您的易信版本过低或未安装，需要安装易信才能使用</string>
+    <string name="yixinmoments">易信朋友圈</string>
+    <string name="youdao">有道云笔记</string>
+    <style name="AnimBottom" parent="@android:style/Animation">  
+		<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+		<item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+	</style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style mce_bogus="1" name="PopupAnimation" parent="android:Animation">          
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>     
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>     
+    </style>
+    <style name="PopupAnimation2">
+        <item name="android:windowEnterAnimation">@anim/product_choice_in</item>
+        <item name="android:windowExitAnimation">@anim/product_choice_out</item>
+	</style>
+    <style name="loading_small">
+        <item name="android:indeterminateDrawable">@anim/loading</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="sdw_79351b">
+        <item name="android:shadowColor">#ff79351b</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="sdw_white">
+        <item name="android:shadowColor">#7fffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.65</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_15_666666_sdw" parent="@style/sdw_white">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="text_16_666666">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="text_18_ffffff">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+</resources>

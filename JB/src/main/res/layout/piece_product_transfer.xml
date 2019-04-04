@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleProgress="http://schemas.android.com/apk/res/com.jiubang.p2p"
+    android:id="@+id/ll_transfer_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="13dp"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="13dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="转让项目介绍"
+                    android:textColor="@color/app_font_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_stauts"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:textColor="@color/app_font"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/app_line" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:paddingRight="@dimen/page_left"
+                android:text="九邦信投网转让服务是为解决用户投资流动性的需求而设立，旨在帮助广大九邦信投网的用户解决投资资金流动性，增加用户的投资体验而设计，用户可以通过九邦信投网出售所拥有的符合相应条件的项目给其他投资人，从而完成转让，获得流动资金。"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_app" />
+        </LinearLayout>
+
+        <!-- 转让人信息 -->
+
+        <LinearLayout
+            android:id="@+id/ll_transfer_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/page_bottom"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/view_list" />
+
+            <TextView
+                android:id="@+id/tv_person_transfer_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="转让人信息"
+                android:textColor="@color/app_font_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/app_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称："
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:text="性别："
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:text="手机号："
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:text="注册时间："
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+
+                <TextView
+                    android:id="@+id/tv_transfer_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 原始借款人信息 -->
+
+        <LinearLayout
+            android:id="@+id/ll_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/page_bottom"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/view_list" />
+
+            <TextView
+                android:id="@+id/tv_person_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="原始借款人信息"
+                android:textColor="@color/app_font_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/app_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名："
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:text="性别："
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:text="年龄："
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_purpose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/page_small"
+                android:text="资金用途："
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_hint" />
+        </LinearLayout>
+
+        <!-- 企业信息 -->
+
+        <LinearLayout
+            android:id="@+id/ll_business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/page_top"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/page_bottom"
+            android:paddingTop="@dimen/page_small"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/view_list" />
+
+            <TextView
+                android:id="@+id/tv_business_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/app_font_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/app_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14sp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="企业名称："
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_hint" />
+
+                    <TextView
+                        android:id="@+id/tv_company_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_hint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/page_small"
+                        android:text="法人代表："
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_hint" />
+
+                    <TextView
+                        android:id="@+id/tv_legalPerson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/page_small"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/font_hint" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:text="注册资本："
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+
+                <TextView
+                    android:id="@+id/tv_registered_capital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:text="所属行业："
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+
+                <TextView
+                    android:id="@+id/tv_industry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_small"
+                    android:textColor="@color/font_gray"
+                    android:textSize="@dimen/font_hint" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/text_line"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/page_small"
+                android:background="@color/app_line" />
+        </LinearLayout>
+
+</LinearLayout>

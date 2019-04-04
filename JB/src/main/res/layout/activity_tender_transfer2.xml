@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circleProgress="http://schemas.android.com/apk/res/com.jiubang.p2p"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <include layout="@layout/piece_product_transfer" />
+
+        <!-- 转让记录 -->
+
+        <LinearLayout
+            android:id="@+id/record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginBottom="@dimen/text_line"
+                android:background="@drawable/view_list" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="投标记录"
+                android:textColor="@color/app_font_dark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/app_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="1dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <com.louding.frame.widget.KJListView
+                        android:id="@+id/listview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="@color/white"
+                        android:divider="@color/transparent"
+                        android:dividerHeight="1dp" />
+
+                    <TextView
+                        android:id="@+id/empty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:drawablePadding="5dp"
+                        android:layout_marginBottom="30dp"
+                        android:drawableTop="@drawable/empty"
+                        android:gravity="center"
+                        android:text="暂无数据"
+                        android:textColor="@color/app_font_light"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_old_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="查看原始项目信息>>"
+        android:textColor="@color/app_blue"
+        android:textSize="@dimen/font_hint"
+        android:visibility="visible" />
+
+</LinearLayout>

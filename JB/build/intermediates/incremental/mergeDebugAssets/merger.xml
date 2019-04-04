@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\JB\JB\src\main\assets"><file name="CommonWebView.html" path="E:\JB\JB\src\main\assets\CommonWebView.html"/><file name="ShareSDK.xml" path="E:\JB\JB\src\main\assets\ShareSDK.xml"/></source><source path="E:\JB\JB\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\JB\JB\src\debug\assets"/></dataSet></merger>

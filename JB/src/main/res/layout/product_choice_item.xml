@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_onclick_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/choice_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="16dp"
+        android:text="不限"
+        android:textColor="@color/app_font_dark"
+        android:textSize="14sp" />
+
+</LinearLayout>

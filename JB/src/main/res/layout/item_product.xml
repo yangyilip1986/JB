@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tc="http://schemas.android.com/apk/res/com.jiubang.p2p"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e8e8e8" />
+
+    <LinearLayout
+        android:id="@+id/ll_selected_financial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp" >
+
+        <!-- 第一行内容 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="九邦信投网1024"
+                    android:textColor="@color/app_font_dark"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/iv_ti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/experience_gold_small" />
+
+                <ImageView
+                    android:id="@+id/iv_xian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/cash_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_product_type_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_blue"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <!--
+                     <TextView
+                    android:id="@+id/nameInfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_frame_orange_chu"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:text="促"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+                -->
+
+                <TextView
+                    android:id="@+id/nameInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_frame_orange"
+                    android:ellipsize="end"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/app_orange"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="7dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/gain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/app_orange"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="预期年化利率"
+                    android:textColor="@color/app_font_light"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/deadline"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|bottom"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/app_font_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/deadlinedesc"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|bottom"
+                    android:text="期限(天)"
+                    android:textColor="@color/app_font_light"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/singlePurchaseLowerLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/app_font_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="起投(元)"
+                    android:textColor="@color/app_font_light"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <com.jiubang.p2p.view.TasksCompletedView
+                android:id="@+id/percentagepb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tc:circleColor="@color/app_blue"
+                tc:radius="25dp"
+                tc:ringColor="@color/app_blue"
+                tc:strokeWidth="3dp"
+                tc:word="抢购" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

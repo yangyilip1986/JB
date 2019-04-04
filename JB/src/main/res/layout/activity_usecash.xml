@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg" >
+
+    <!-- 显示头部标题 -->
+
+    <LinearLayout
+        android:id="@+id/headLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
+    <!--
+    <TextView
+        android:id="@+id/tv_hint1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headLinear"
+        android:layout_marginLeft="@dimen/page_line"
+        android:layout_marginRight="@dimen/page_line"
+        android:text="选择当前可用的卡券"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_app"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_hint2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hint1"
+        android:layout_marginBottom="@dimen/page_line"
+        android:layout_marginLeft="@dimen/page_line"
+        android:layout_marginRight="@dimen/page_line"
+        android:text="温馨提示：限每个投资项目仅可使用1张卡券"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_hint"
+        android:visibility="gone" />
+    -->
+
+    <FrameLayout
+        android:id="@+id/fl_usecash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headLinear"
+        android:background="@color/white" 
+        android:layout_above="@+id/tv_confirm">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:divider="@color/transparent"
+            android:dividerHeight="5dp" />
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/empty"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/app_font_light"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_blue"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="确定选择"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_title"
+        android:visibility="gone" />
+
+</RelativeLayout>
