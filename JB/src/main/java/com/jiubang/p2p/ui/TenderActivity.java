@@ -76,53 +76,64 @@ public class TenderActivity extends KJActivity {
 	private int window_width;
 	private int window_height;
 	private LayoutParams para;
+
 	@BindView(id = R.id.drop_down_menu,click = true)
 	private ImageView drop_down_menu;
 	
 	// 产品详情
+	//总金额
 	@BindView(id = R.id.totalInvestment)
 	private TextView totalInvestment;
+	//投资时限
 	@BindView(id = R.id.investmentPeriodDesc)
 	private TextView investmentPeriodDesc;
 	@BindView(id = R.id.investmentPeriodDescunit)
 	private TextView investmentPeriodDescunit;
+	//预计年化收益率
 	@BindView(id = R.id.annualizedGain)
 	private TextView annualizedGain;
+	//第三方机构担保
 	@BindView(id = R.id.guaranteeModeName)
 	private TextView guaranteeModeName;
+	//还款方式
 	@BindView(id = R.id.repaymentMethodName)
 	private TextView repaymentMethodName;
+	//还款中or投标截止
 	@BindView(id = R.id.interestBeginDate)
 	private TextView interestBeginDate;
+	//可投金额
 	@BindView(id = R.id.remainingInvestmentAmount)
 	private TextView remainingInvestmentAmount;
+	//起投金额
 	@BindView(id = R.id.singlePurchaseLowerLimit)
 	private TextView singlePurchaseLowerLimit;
+	//圆形百分比控件
 	@BindView(id = R.id.percentagepb)
 	private CircleProgressBar percentagepb;
-	@BindView(id = R.id.tv_notice)
-	private TextView tv_notice;
-
+	//充值按钮
 	@BindView(id = R.id.tender_cash, click = true)
 	private TextView tender_cash;
+	//收益计算
 	@BindView(id = R.id.et_price)
 	private EditText et_price;
-	@BindView(id = R.id.cash, click = true)
-	private TextView cash;
+	//最下边按钮
 	@BindView(id = R.id.tv_buy,click = true)
 	private TextView tv_buy;
+	//账户余额
 	@BindView(id = R.id.available)
 	private TextView mAvaliable;
+	//持有N天以上可转让
 	@BindView(id = R.id.tv_transfer_froze_time)
 	private TextView tv_transfer_froze_time;
+	//// 产品类型 0:普通标(一般情况) 1:体验标(仅限体验金) 2:混合标(可用现金和体验金)
 	@BindView(id = R.id.tv_xian_or_ti)
 	private TextView tv_xian_or_ti;
-
+	//加息
 	@BindView(id = R.id.add_v)
 	private LinearLayout add_v;
 	@BindView(id = R.id.add)
 	private TextView add;
-	
+	//计算具体收益
 	@BindView(id =R.id.tenserinvest_price)
 	private TextView tenserinvest_price;
 	
@@ -241,13 +252,13 @@ public class TenderActivity extends KJActivity {
 	private int id;
 	private int products_exp_type;// 产品类型 0:普通标(一般情况) 1:体验标(仅限体验金) 2:混合标(可用现金和体验金)
 	private String products_name;
-	private double available; //可用余额
+	private double available; //账户余额
 	private TitlePopup titlePopup;
 	
 	private Double annualizedGain2;
 	private Double add2;
 	private Double num;
-	
+	//加息
 	private String tenderAward;
 	
 	private boolean next = false;// 下一个页面可进行标识
@@ -271,10 +282,10 @@ public class TenderActivity extends KJActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN | WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         //屏幕适配
-//        displayMetrics = new DisplayMetrics();
-//		getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-//		window_height = displayMetrics.heightPixels;
-//		window_width = displayMetrics.widthPixels;
+        displayMetrics = new DisplayMetrics();
+		getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+		window_height = displayMetrics.heightPixels;
+		window_width = displayMetrics.widthPixels;
         
 		ActivityUtil.getActivityUtil().addActivity(this);
 	}
@@ -344,6 +355,7 @@ public class TenderActivity extends KJActivity {
 				listview2.setAdapter(recordAdapter);
 				listview2.setOnItemClickListener(listener);
 				available = ret.getDouble("available");
+				//账户余额
 				mAvaliable.setText(ConvUtils.convToMoney(available) + "元");
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -367,10 +379,14 @@ public class TenderActivity extends KJActivity {
 	private void initView() {
 
 		// 产品详情
+		//总金额
 		totalInvestment.setText(product.getTotalInvestment());
+		//投资时限
 		investmentPeriodDesc.setText(product.getInvestmentPeriodDesc());
 		investmentPeriodDescunit.setText(product.getInvestmentPeriodDescunit());
+		//预计年化收益率
 		annualizedGain.setText(product.getAnnualizedGain());
+		//加息
 		tenderAward = product.getTenderAward();
 		if (!"".equals(tenderAward)) {
 			add_v.setVisibility(View.VISIBLE);
@@ -381,23 +397,29 @@ public class TenderActivity extends KJActivity {
 		}
 		annualizedGain2 = Double.parseDouble(annualizedGain.getText().toString());
         num = annualizedGain2 + add2;
-        
+        //第三方机构担保
 		guaranteeModeName.setText(product.getGuaranteeModeName());
+		//还款方式
 		repaymentMethodName.setText(product.getRepaymentMethodName());
+		//还款中or投标截止
 		interestBeginDate.setText("剩余投资时间："+product.getExpirationDate());
+		//可投金额
 		remainingInvestmentAmount.setText(product.getRemainingInvestmentAmount_show());
+		//起投金额
 		singlePurchaseLowerLimit.setText(product.getSinglePurchaseLowerLimit_show());
 //		if (product.getInvestmentProgress() == 100) {
 //			tv_buy.setBackgroundColor(getResources().getColor(R.color.app_font_light));
 //			tv_buy.setText("已满标");
 //			tv_buy.setClickable(false);
 //		}
-		
+
+		//最下边按钮显示文字状态设置
 		String str = TypeArray.status[product.getNewstatus()];
 		switch (product.getNewstatus()) {
 		case 1:
 			tv_stauts.setText("还款中");
 			ll_plan.setVisibility(View.VISIBLE);
+			//还款中or投标截止
 			interestBeginDate.setText("还款中");
 			tv_buy.setBackgroundColor(getResources().getColor(R.color.app_font_light));
 			tv_buy.setText("还款中");
@@ -456,7 +478,8 @@ public class TenderActivity extends KJActivity {
 			tv_xian_or_ti.setVisibility(View.VISIBLE);
 		} else {
 			tv_xian_or_ti.setVisibility(View.GONE);
-			
+
+			//持有N天以上可转让
 			if(!"".equals(product.getTransfer_froze_time())) {
 				tv_transfer_froze_time.setVisibility(View.VISIBLE);
 				tv_transfer_froze_time.setText(product.getTransfer_froze_time());
@@ -528,7 +551,8 @@ public class TenderActivity extends KJActivity {
 					@SuppressWarnings("unchecked")
 					List<String> list = (List<String>) data_list.get(position).get("imageList");
 					imageAdapter = new ImageAdapter(TenderActivity.this, list);
-					
+
+					//屏幕适配
 					para = (LayoutParams) lv_image.getLayoutParams();
 //					para.height = (int) (window_height * (750.0 / 1334));
 //					para.width = (int) (window_width * (430.0 / 750));
@@ -664,13 +688,15 @@ public class TenderActivity extends KJActivity {
 				ll_company.setVisibility(View.GONE);
 			}
 		}
-		
+
+		//圆形百分比控件
 		percentagepb.setProgress(product.getInvestmentProgress());
 
 		http = new KJHttp();
 		params = new HttpParams();
 		params.put("day_month", product.getInvestmentPeriodDescunit());
 		params.put("interest", num.toString());
+		//收益计算
 		params.put("amount", et_price.getText().toString());
 		params.put("invest_day", product.getInvestmentPeriodDesc());
 		http.post(AppConstants.PROFIT_CALCULATOR, params, profitcallback);
@@ -686,6 +712,7 @@ public class TenderActivity extends KJActivity {
 		View view = inflater.inflate(R.layout.task_detail_popupwindow2, null);
 		if(next){
 			switch (v.getId()) {
+				//充值
 			case R.id.tender_cash:
 				if(!AppVariables.isSignin) {
 					startActivity(new Intent(TenderActivity.this, SigninActivity.class));
@@ -733,6 +760,7 @@ public class TenderActivity extends KJActivity {
 				params.put("day_month", product.getInvestmentPeriodDescunit());
 				params.put("invest_day", product.getInvestmentPeriodDesc());
 				params.put("interest",num.toString());
+				//收益计算
 				params.put("amount", et_price.getText().toString());
 				http.post(AppConstants.PROFIT_CALCULATOR, params, profitcallback);
 				break;
