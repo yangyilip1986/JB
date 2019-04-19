@@ -110,6 +110,7 @@ public class KJHttp {
     public void post(String url, HttpParams params, HttpCallBack callback) {
         KJLoger.debug("请求URL========>" + url);
         KJLoger.debug("请求参数========>" + params.toJsonString());
+        Log.e(TAG, "post: " + params.toJsonString());
         if (params != null) {
             if (params.haveFile()) {
                 new VolleyTask(Method.FILE, url, params, callback).execute();

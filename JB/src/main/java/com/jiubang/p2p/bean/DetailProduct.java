@@ -24,7 +24,7 @@ public class DetailProduct {
 	private int id;// 商品id
 	private String name;
 	private int status;
-	private int newstatus;
+	private int newstatus;//最下边按钮状态显示
 	private String totalInvestment; // 总投资额
 	private String totalInvestmentunit; // 总投资额
 	private String investmentPeriodDesc; // 投资时限

@@ -10,6 +10,9 @@ import android.view.View;
 
 import com.jiubang.p2p.R;
 
+/**
+ * 直投直贷专区item详情 圆形百分比
+ * */
 public class CircleProgressBar extends View {
 
 	private int progress;

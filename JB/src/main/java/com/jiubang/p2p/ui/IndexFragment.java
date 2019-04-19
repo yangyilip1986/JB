@@ -242,7 +242,7 @@ public class IndexFragment extends Fragment implements OnClickListener{
 		public void onSuccess(String t) {
 			try {
 				JSONObject ret = new JSONObject(t);
-
+				Log.e(TAG, "ret11111: "+ret );
 				//一个TextView分不同颜色字段
 				StringBuilder message = new StringBuilder();
 				message.append("<font color=\"#333333\">累计会员：</font>");
